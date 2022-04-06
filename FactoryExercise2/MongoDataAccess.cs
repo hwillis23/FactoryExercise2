@@ -7,6 +7,10 @@ namespace FactoryExercise2
     class MongoDataAccess : IDataAccess
 
     {
+        public MongoDataAccess()
+        {
+        }
+
         public List<Product> items = new List<Product>()
         {
             new Product() { Name = "Mango", Price = 1 }

@@ -5,10 +5,12 @@ using System.Text;
 namespace FactoryExercise2
 {
     public static class DataAccessFactory
-    {
+    {                
+
+                       //return type: IDataAccess
         public static IDataAccess GetDataAccessType(string databaseType)
         {
-            switch(databaseType)   //use switch case 
+            switch(databaseType.ToLower())   //use switch case 
             {
 
                 case "sql":
@@ -21,11 +23,6 @@ namespace FactoryExercise2
                 default: throw new ArgumentException();
 
 
-                    
-
-                   
-
-                  
             }
 
         } 

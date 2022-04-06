@@ -6,7 +6,7 @@ namespace FactoryExercise2
 {
     class ListDataAccess : IDataAccess
     {
-        public List<Product> items = new List<Product>()
+        public static List<Product> items = new List<Product>()
         {
             new Product() { Name = "bread", Price = 3 }
 
